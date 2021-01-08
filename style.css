@@ -11,7 +11,7 @@ html
 }
 body
 {
-	font-family: sans-serif;
+	font-family: sans-serif,tahoma;
 	font-size: 16px;
 }
 	#banner
@@ -40,7 +40,8 @@ body
 }
 .banner-text h1 span
 {
-	color: purple;
+	color: #ffa500;
+	font-family: cursive;
 }
 
 .banner-text p
@@ -81,7 +82,7 @@ body
 	transition: 0.5s;
 }
 
-.banner-btn a:hover span
+.banner-btn ul li:hover span
 {
 	width: 100%;
 }
@@ -101,72 +102,73 @@ body
 
 .banner-text
 {
-	padding-top: 45vh;
+	padding-top: 190px;
 	margin: 5px 10px;
 }
 
 .banner-text h1
 {
-	font-size: 30px;
+	font-size: 20px;
 
 }
 .banner-text p
 {
-	font-size: 18px;
+	font-size: 16px;
 	margin-top: 10px;
 
 }
 
-.menu-wrapper ul li
-{
-	list-style: none;
-	display: inline-block;
-	margin-left: 60px;
-	padding-left: 20px;
-
 }
-.menu-wrapper ul li a
-{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #fff;
-	margin-right: 10px;
 
 
-}
-}
 /*menu container*/
 .menu-container
 {
 	width: 100%;
+	height: 80px;
+	margin-left: auto;
+	margin-right: auto;
 	position: sticky;
 	top: 0;
-	left: 0;
+	left: 0px;
+	background: #002;
+	z-index: 2;
+	border-bottom: 3px solid green;
 
 
 }
+#menubtn img
+{
+	
+	display: none;
+}
+
+
+
 
 .menu-wrapper
 {
-
 	width: 100%;
-	line-height:60px;
-	border-bottom: 3px solid green;
-
-	background-image:url("images/back.gif");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	position: relative;
+	position: absolute;
+	
+	
 }
+
+
+#menubtn 
+{
+	display: none;
+}
+
 .menu-wrapper ul li
 {
 	list-style: none;
 	display: inline-block;
-	margin-left: 60px;
-	padding-left: 20px;
+	margin: 30px 20px;
+	padding-left: 10px;
 
 }
+
 .menu-wrapper ul li a
 {
 	text-decoration: none;
@@ -174,7 +176,12 @@ body
 	color: #fff;
 	margin-right: 10px;
 
+}
 
+.menu-wrapper ul li a:hover
+{
+	background: orange;
+	color: #001;
 }
 
 
@@ -185,20 +192,50 @@ body
 
 
 
+.menu-container
+{
+	
+	position: fixed;
+
+}
+
+#menubtn
+{
+	width: 44px;
+	height: 44px;
+	position: fixed;
+	right: 20px;
+	top: 0;
+	margin-top: 20px;
+	background: #fff;
+	display: block;
+}
+
+
+.menu-wrapper 
+{
+	display: none;
+	margin-top: 70px;
+	height: auto;
+	background: #002;
+	border-bottom: 3px solid green;
+
+}
+
 .menu-wrapper ul li
 {
-	display: inline-block;
-	margin-left: 5px;
+	display:block;
+	margin: 10px 5px;
 	padding-left: 10px;
-
+	margin-top: 20px;
+	text-align: center;
 }
 
 }
-/*.menu-wrapper img
+
+#menubtn img
 {
-	position: absolute;
-	right: 10px;
-	top: 0;
+	display: block;
 	width: 44px;
 	height: 44px;
 	background: white;
@@ -207,8 +244,8 @@ body
 .menu-wrapper img:hover
 {
 	cursor: pointer;
-}*/
-/*content container*/
+}
+
 
 .container
 {
@@ -413,7 +450,13 @@ body
 	display: block;
 }
 
-
+.aboutme img
+{
+	width: 52%;
+	border-radius: 7px;
+	background-image:rgba(0,0,0,0.5); 
+	height: auto;
+}
 }
 
 
@@ -436,8 +479,7 @@ body
 	margin-top: 30px;
 	margin-left: 10px;
 	padding: 20px;
-	box-shadow: 10px 5px 5px 3px lightblue;
-
+	border: 1px	solid #ccc;
 }
 
 .content .project:hover
@@ -454,7 +496,6 @@ transition: 0.5s ease;
 #project .content .project img
 {
 	margin-top: 10px;
-
 	width: 300px;
 	height: 300px;
 	background: #fff;
@@ -473,6 +514,18 @@ transition: 0.5s ease;
 {
 	width: 100%;
 	display: block;
+}
+
+#project .content .project img
+{
+	
+	width: 80%;
+	height: auto;
+}
+
+.project h2
+{
+	font-size: 14px;
 }
 
 }
@@ -567,8 +620,8 @@ transition: 0.5s ease;
  }
  .social-icon a img
  {		
- 		width: 64px;
- 		height: 64px;
+ 		width: 44px;
+ 		height: 44px;
  		border-radius: 3px;
  		background: #000;
  }
@@ -590,7 +643,7 @@ transition: 0.5s ease;
 
 
 /*social media query*/
-@media (max-width: 734px){
+@media (max-width: 720px){
 
 .social-icon
 {
@@ -638,4 +691,32 @@ transition: 0.5s ease;
 	display: block;
 	margin-left: 20px;
 	}
+
+	.form_input input{
+	width: 90%;
+	padding: 15px 20px;
+	border: 2px solid #ccc;
+}
+
+.form_input textarea{
+	padding: 12px 20px;
+	width: 90%;
+	height: 80px;
+	resize: none;
+	border: 2px solid #ccc;
+}
+footer ul li
+ {
+ 	
+ 	margin-right: 40px;
+	font-weight: bold;
+	 }
+
+	 #programming myability h2
+	 {
+	 	font-size: 14px;
+	 }
+.container h1:after
+{
+	margin-left: 38%;
 }
