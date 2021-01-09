@@ -108,7 +108,7 @@ body
 
 .banner-text h1
 {
-	font-size: 20px;
+	font-size: 25px;
 
 }
 .banner-text p
@@ -178,10 +178,22 @@ body
 
 }
 
+.menu-wrapper ul li .active
+{
+	
+	color: #fff;
+	margin-right: 10px;
+	background: orange;
+	padding: 10px;
+
+
+}
+
 .menu-wrapper ul li a:hover
 {
 	background: orange;
 	color: #001;
+	padding: 10px;
 }
 
 
@@ -201,13 +213,12 @@ body
 
 #menubtn
 {
-	width: 44px;
-	height: 44px;
+	width: 40px;
+	height: 40px;
 	position: fixed;
 	right: 20px;
 	top: 0;
 	margin-top: 20px;
-	background: #fff;
 	display: block;
 }
 
@@ -236,8 +247,8 @@ body
 #menubtn img
 {
 	display: block;
-	width: 44px;
-	height: 44px;
+	width: 40px;
+	height: 40px;
 	background: white;
 	margin-top: 5px;
 }
@@ -663,7 +674,7 @@ transition: 0.5s ease;
  {
  	list-style: none;
  	display: inline-block;
- 	margin-right: 30px;
+ 	margin-left: 30px;
 	color: gray;
 	font-weight: bolder;
 	 }
