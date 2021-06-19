@@ -250,14 +250,16 @@ The following are some highlight of project Executed as requested by the client:
 	var nav = document.getElementById("nav");
 	var menu_container = document.getElementById("menu_container");
 
+	nav.style.maxHeight ="0px";
 	menubtn.onclick = function(){
 
-		if (nav.style.display =="none") {
+		if (nav.style.maxHeight =="0px") {
 
-			nav.style.display ="block";
+				nav.style.maxHeight ="200px";
+
 		}else{
 		
-			nav.style.display ="none";
+			nav.style.maxHeight ="0px"
 
 		}
 	}

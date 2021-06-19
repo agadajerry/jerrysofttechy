@@ -84,14 +84,15 @@ h1,h2{
 .banner-btn a
 {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 	border: 1px solid #fff;
 	padding: 16px 12px;
 	margin-bottom: 40px;
 	position: relative;
 	z-index: 1;
 	font-size: 20px;
-	background: red;
+	font-weight: 400;
+	background: lightblue;
 	border: none;
 	border-radius: 5px;
 
@@ -104,7 +105,7 @@ h1,h2{
 	position: absolute;
 	top: 0;
 	left: 0;
-	background:blue;
+	background:orange;
 	z-index: -1;
 	transition: 0.5s;
 }
@@ -118,7 +119,7 @@ h1,h2{
 .banner-btn a:hover
 {
 	color:orange;
-	background: blue;
+	color: #fff;
 }
 
 
@@ -222,8 +223,9 @@ color: #fff;
 	.menu{
 		width: 100%;
 		height: auto;
-		background: linear-gradient(rgba(0,0,0,0.5), #001);
+		background: linear-gradient(rgba(0,0,0,0.7), #001);
 		margin-bottom: 20px;
+		overflow: hidden;
 
 	}
 
@@ -622,14 +624,13 @@ display: block;
 
 .submit_btn input[type='submit']{
 	display: block;
-	width: 180px;
-	height: 40px;
+	width: 100px;
 	border: none;
 	border-radius: 5px;
 	margin: 30px auto;
 	padding: 15px 12px;
 	background: #fff;
-	color: #000;
+	color: orange;
 	text-align: center;
 	font-size: 16px;
 	font-weight: 400;
