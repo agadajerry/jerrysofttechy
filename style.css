@@ -120,6 +120,7 @@ h1,h2{
 {
 	color:orange;
 	color: #fff;
+	transition: background 0.5s;
 }
 
 
@@ -165,6 +166,7 @@ h1,h2{
 	top: 0;
 	right: 0;
 	border-bottom: 2px solid orange;
+	z-index: 2;
 
 }
 #menubtn img{
@@ -213,7 +215,7 @@ color: #fff;
 	border-left: 2px solid orange;
 	border-bottom: 2px solid orange;
 	padding: 3px;
-	transition: 0.5s;
+	transition: 3s;
 }
 
 
@@ -223,12 +225,14 @@ color: #fff;
 	.menu{
 		width: 100%;
 		height: auto;
-		background: linear-gradient(rgba(0,0,0,0.7), #001);
+		background: linear-gradient(rgba(0,0,0,0.9), #001);
 		margin-bottom: 20px;
 		overflow: hidden;
+		transition: max-height 0.5s;
 
 	}
 
+	
 	.menu ul{
 		text-align: center;
 		border-radius: 10px;
@@ -603,6 +607,7 @@ display: block;
 	border: 2px solid #ccc;
 	outline: none;
 	border-radius: 10px;
+	font-size: 15px;
 }
 
 .form_input textarea{
@@ -611,8 +616,12 @@ display: block;
 	height: 80px;
 	resize: none;
 	border: 2px solid #ccc;
+	font-size: 15px;
 }
 
+.form_input textarea,input:focus{
+	outline: none;
+}
 .form_wrapper
 {
 	text-align: center;
@@ -629,8 +638,8 @@ display: block;
 	border-radius: 5px;
 	margin: 30px auto;
 	padding: 15px 12px;
-	background: #fff;
-	color: orange;
+	background: orange;
+	color: #003;
 	text-align: center;
 	font-size: 16px;
 	font-weight: 400;
@@ -639,9 +648,9 @@ display: block;
 }
 
  .submit_btn input[type='submit']:hover{
- 	background-color: orange;
- 	color: #fff;
+ 	color: #002;
  	cursor: pointer;
+ 	transition: background 0.5s;
 
  }
 
@@ -716,11 +725,20 @@ display: block;
  {
  	list-style: none;
  	display: inline-block;
- 	margin-left: 30px;
+ 	margin: 20px;
 	color: gray;
 	font-weight: bolder;
 	 }
  
+footer ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	border: 1px solid red;
+	padding: 4px;
+	border-radius: 10px;
+	margin-top: 5px;
+}
 
 
  /*mdia query for all*/
