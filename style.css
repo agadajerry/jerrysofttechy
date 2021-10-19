@@ -1,6 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
+	list-style-type: none;
 	font-family: 'Lato', sans-serif;
 	box-sizing: border-box;
 }
@@ -288,7 +289,7 @@ color: #fff;
 	padding: 80px 0;
 	max-width: 100%;
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 30px;
 }
 
 .container h1
@@ -311,7 +312,7 @@ color: #fff;
 	margin: 10px auto;
 	margin-bottom: 30px;
 	border: 1px dotted #111
-	border-radius:5px;
+	border-radius: 5px;
 	
 }
 
@@ -414,18 +415,24 @@ color: #fff;
 
 .aboutme
 {
-	width: 48%;
+	width: 43%;
 	height: auto;
 	background: #fff;
 	text-align: center;
 	margin-top: 30px;
 	margin-left: 10px;
-	padding: 20px;
+	padding: 30px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	box-shadow: -2px 5px 5px 3px lightblue;
 
-
+}
+.aboutme ul{
+	padding: 10px;
+	font-weight: bold;
+}
+ ul li{
+	list-style-type: none;
 }
 
 .aboutme img
